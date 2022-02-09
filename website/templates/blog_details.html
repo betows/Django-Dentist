@@ -3,11 +3,11 @@
 {% block content %}
 
   <!-- ***** Breadcrumb Area Start ***** -->
-  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url(img/bg-img/12.jpg);">
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
-          <h2 class="title">Blog Details</h2>
+          <h2 class="title">Detalhes do Blog</h2>
         </div>
       </div>
     </div>
@@ -19,7 +19,7 @@
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Blog Details</li>
+              <li class="breadcrumb-item active" aria-current="page">Detalhes do blog</li>
             </ol>
           </nav>
         </div>
@@ -35,9 +35,9 @@
         <div class="col-12 col-lg-8 mb-100">
           <!-- Blog Details Area -->
           <div class="blog-details-area">
-            <img src="./img/bg-img/24.jpg" alt="">
+            <img src="{% static 'website/img/bg-img/24.jpg' %}" alt="">
 
-            <h2 class="post-title">How your mouth bacteria can harm lungs</h2>
+            <h2 class="post-title">Como a bactéria em sua boca pode prejudicar os pulmões</h2>
             <div class="post-meta">
               <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
               <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
@@ -53,15 +53,15 @@
                 <i class="fa fa-quote-left"></i>
               </div>
               <div class="text">
-                <h5>Good dental care doesn't make you a good student, but if your tooth hurts, it's hard to be a good student</h5>
-                <h6>Geoffrey Canada / <span>Social Activist</span></h6>
+                <h5>Um bom atendimento odontológico não faz de você um bom aluno, mas se seu dente dói, é difícil ser um bom aluno</h5>
+                <h6>Geoffrey Canada / <span>Ativista Social</span></h6>
               </div>
             </blockquote>
             <p>Proin venenatis elementum pretium. Vivamus mollis iaculis mi, a efficitur turpis maximus non. Sed felis sapien, aliquam eu nunc in, tempus interdum turpis. In in porta nulla. Maecenas ut elit nec nibh vehicula auctor eget felis. Nulla
               finibus dictum augue ullamcorper. Integer nuamcorper lorem sit down amet dignissim tincidunt.
               Utsu risus feugiat, scelerisque turpis eu, suscipit orci. Fusce indo diam ipsum. Nulla facilisi class aptent taciti
               litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            <img src="./img/bg-img/25.jpg" alt="">
+            <img src="{% static 'website/img/bg-img/25.jpg' %}" alt="">
             <p>Nunc vitae nisl porttitor, consectetur sapien vel, vulputate orci. Sed viverra, neque action lacinia hendrerit, lectus purus pellentesque dui, eu porttitor enim neque vitae magna. Nunc nec eros nonta risus vestibulum feugiat. In
               semper tempor sem, eget porttitor dolor convallis sit amet. Praesent ut justo augue. Curabitur id elit nisi. Vivamus varius lacus sit amet nisi lacinia, sed pulvinar odio rhoncus. In sagittis aliquet tellus. Nulla pellentesque, risus
               vitae porta iaculis, metus tortor cursus felis, at porta odio lorem nonsa mauris. Nullam mattis nulla blandit sapien cursus, quis luctus ex volutpat. Vestibulum santa dui nulla, sed feugiat felis hendrerit euro. Praesent in lobortis
@@ -78,7 +78,7 @@
 
           <!-- Comments Area -->
           <div class="comment_area clearfix">
-            <h5 class="title">3 Comments</h5>
+            <h5 class="title">3 Comentários</h5>
 
             <ol>
               <!-- Single Comment Area -->
@@ -87,7 +87,7 @@
                 <div class="comment-content d-flex">
                   <!-- Comment Author -->
                   <div class="comment-author">
-                    <img src="img/bg-img/26.jpg" alt="author">
+                    <img src="{% static 'website/img/bg-img/26.jpg' %}" alt="author">
                   </div>
                   <!-- Comment Meta -->
                   <div class="comment-meta">
@@ -102,13 +102,13 @@
                     <div class="comment-content d-flex">
                       <!-- Comment Author -->
                       <div class="comment-author">
-                        <img src="img/bg-img/27.jpg" alt="author">
+                        <img src="{% static 'website/img/bg-img/27.jpg' %}" alt="author">
                       </div>
                       <!-- Comment Meta -->
                       <div class="comment-meta">
                         <a href="#" class="post-author">Samantha Harvey / <span>28 Sep 2018 at 10:30 am</span></a>
                         <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sitdown ameto, consectetur, adipisci velit, sed quiata non numqua eius modi tempor incidunt ut labore.</p>
-                        <a href="#" class="comment-reply">Reply</a>
+                        <a href="#" class="comment-reply">Comente</a>
                       </div>
                     </div>
                   </li>
@@ -121,13 +121,13 @@
                 <div class="comment-content d-flex">
                   <!-- Comment Author -->
                   <div class="comment-author">
-                    <img src="img/bg-img/28.jpg" alt="author">
+                    <img src="{% static 'website/img/bg-img/28.jpg' %}" alt="author">
                   </div>
                   <!-- Comment Meta -->
                   <div class="comment-meta">
                     <a href="#" class="post-author">Jonny Evans / <span>28 Sep 2018 at 11:00 am</span></a>
                     <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sitdown ameto, consectetur, adipisci velit, sed quiata non numqua eius modi tempor incidunt ut labore.</p>
-                    <a href="#" class="comment-reply">Reply</a>
+                    <a href="#" class="comment-reply">Comente</a>
                   </div>
                 </div>
               </li>
@@ -136,22 +136,22 @@
 
           <!-- Leave A Reply -->
           <div class="contact-form mt-30">
-            <h5 class="mb-30">Leave A Reply</h5>
+            <h5 class="mb-30">Deixe um comentário</h5>
 
             <!-- Form -->
             <form action="#" method="post">
               <div class="row">
                 <div class="col-lg-6">
-                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Your Name">
+                  <input type="text" name="message-name" class="form-control mb-30" placeholder="Seu Nome">
                 </div>
                 <div class="col-lg-6">
-                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Your Email">
+                  <input type="email" name="message-email" class="form-control mb-30" placeholder="Seu Email">
                 </div>
                 <div class="col-12">
-                  <textarea name="message" class="form-control mb-30" placeholder="Your Message"></textarea>
+                  <textarea name="message" class="form-control mb-30" placeholder="Sua Mensagem"></textarea>
                 </div>
                 <div class="col-12">
-                  <button type="submit" class="btn dento-btn">Reply</button>
+                  <button type="submit" class="btn dento-btn">Comente</button>
                 </div>
               </div>
             </form>
@@ -173,29 +173,29 @@
 
             <!-- Single Widget Area -->
             <div class="single-widget-area catagories-widget">
-              <h5 class="widget-title">Categories</h5>
+              <h5 class="widget-title">Categorias</h5>
 
               <!-- catagories list -->
               <ul class="catagories-list">
-                <li><a href="#">Dentistry Articles</a></li>
-                <li><a href="#">Oral Health</a></li>
-                <li><a href="#">Dental Technology</a></li>
-                <li><a href="#">Kids Care Dental</a></li>
-                <li><a href="#">Healthy Smiles, Inside &amp; Out</a></li>
+                <li><a href="#">Artigos de Odontologia</a></li>
+                <li><a href="#">Saúde Bucal</a></li>
+                <li><a href="#">Tecnologia odontológica</a></li>
+                <li><a href="#">Assistência Odontológica Infantil</a></li>
+                <li><a href="#">Sorrisos saudáveis, por dentro &amp; por fora</a></li>
               </ul>
             </div>
 
             <!-- Single Widget Area -->
             <div class="single-widget-area news-widget">
-              <h5 class="widget-title">Recent News</h5>
+              <h5 class="widget-title">Novidades</h5>
 
               <!-- Single News Area -->
               <div class="single-news-area d-flex align-items-center">
                 <div class="blog-thumbnail">
-                  <img src="./img/bg-img/21.jpg" alt="">
+                  <img src="{% static 'website/bg-img/21.jpg' %}" alt="">
                 </div>
                 <div class="blog-content">
-                  <a href="#" class="post-title">Tooth decay: why good dental hygiene is important</a>
+                  <a href="#" class="post-title">Cárie dentária: por que uma boa higiene dental é importante</a>
                   <span class="post-date">28 Sep 2018</span>
                 </div>
               </div>
@@ -203,10 +203,10 @@
               <!-- Single News Area -->
               <div class="single-news-area d-flex align-items-center">
                 <div class="blog-thumbnail">
-                  <img src="./img/bg-img/22.jpg" alt="">
+                  <img src="{% static 'website/bg-img/22.jpg' %}" alt="">
                 </div>
                 <div class="blog-content">
-                  <a href="#" class="post-title">Six reasons your breath might smell like poop</a>
+                  <a href="#" class="post-title">Seis razões pelas quais seu hálito pode cheirar a cocô</a>
                   <span class="post-date">28 Sep 2018</span>
                 </div>
               </div>
@@ -214,10 +214,10 @@
               <!-- Single News Area -->
               <div class="single-news-area d-flex align-items-center">
                 <div class="blog-thumbnail">
-                  <img src="./img/bg-img/23.jpg" alt="">
+                  <img src="{% static 'website/bg-img/23.jpg' %}" alt="">
                 </div>
                 <div class="blog-content">
-                  <a href="#" class="post-title">Everything you need to know about sinus infection</a>
+                  <a href="#" class="post-title">Tudo o que você precisa saber sobre sinusite</a>
                   <span class="post-date">28 Sep 2018</span>
                 </div>
               </div>

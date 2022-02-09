@@ -6,7 +6,7 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12">
-          <h2 class="title">Service</h2>
+          <h2 class="title">Serviços</h2>
         </div>
       </div>
     </div>
@@ -17,8 +17,8 @@
         <div class="col-12">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#"><i class="fa fa-home"></i> Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Service</li>
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i> Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">serviços</li>
             </ol>
           </nav>
         </div>
@@ -38,7 +38,7 @@
             <div class="icon--">
               <img src="{% static 'website/img/core-img/s6.png' %}" alt="">
             </div>
-            <h5>Teeth Whitening</h5>
+            <h5>Clareamento dos dentes</h5>
             <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
               mattis mollis maximus.</p>
           </div>
@@ -50,7 +50,7 @@
             <div class="icon--">
               <img src="{% static 'website/img/core-img/s7.png' %}" alt="">
             </div>
-            <h5>Dental Implants</h5>
+            <h5>Implantes dentários</h5>
             <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
               mattis mollis maximus.</p>
           </div>
@@ -62,7 +62,7 @@
             <div class="icon--">
               <img src="{% static 'website/img/core-img/s8.png' %}" alt="">
             </div>
-            <h5>Missing Teeth</h5>
+            <h5>Dentes perdidos</h5>
             <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
               mattis mollis maximus.</p>
           </div>
@@ -74,7 +74,7 @@
             <div class="icon--">
               <img src="{% static 'website/img/core-img/s9.png' %}" alt="">
             </div>
-            <h5>Cosmetic Dentistry</h5>
+            <h5>Odontologia estética</h5>
             <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
               mattis mollis maximus.</p>
           </div>
@@ -86,7 +86,7 @@
             <div class="icon--">
               <img src="{% static 'website/img/core-img/s10.png' %}" alt="">
             </div>
-            <h5>Examination</h5>
+            <h5>Exame</h5>
             <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
               mattis mollis maximus.</p>
           </div>
@@ -98,7 +98,7 @@
             <div class="icon--">
               <img src="{% static 'website/img/core-img/s6.png' %}" alt="">
             </div>
-            <h5>Teeth Pain</h5>
+            <h5>Dor de dente</h5>
             <p>In pretium neque a libero congue. Elit diam lectus. Prasent lacinia vitae sit
               mattis mollis maximus.</p>
           </div>
@@ -124,8 +124,8 @@
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
+                <h5>“Eu vinha evitando o dentista há anos devido a más experiências. Um SMS de lembrete é enviado no dia útil anterior. Eu também tinha um compromisso de confirmação de chamada. Sou paciente desde então. Meu dentista é muito reconfortante e
+                  muito útil. Excelente tratamento e aconselhamento.”</h5>
                 <h6>Arron Ramsey</h6>
                 <p>Dental Patient</p>
               </div>
@@ -139,8 +139,8 @@
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
+                <h5>“Eu vinha evitando o dentista há anos devido a más experiências. Um SMS de lembrete é enviado no dia útil anterior. Eu também tinha um compromisso de confirmação de chamada. Sou paciente desde então. Meu dentista é muito reconfortante e
+                  muito útil. Excelente tratamento e aconselhamento.”</h5>
                 <h6>Arron Ramsey</h6>
                 <p>Dental Patient</p>
               </div>
@@ -154,8 +154,8 @@
               </div>
               <!-- Content -->
               <div class="testimonial-content">
-                <h5>“I'd been avoiding the dentist for years due to bad experiences. A reminder SMS is sent the working day beforehand. I also had a call confirming appointment. I have been a patient ever since. My dentist is very reassuring and
-                  very helpful. Excellent treatment and advice.”</h5>
+                <h5>“Eu vinha evitando o dentista há anos devido a más experiências. Um SMS de lembrete é enviado no dia útil anterior. Eu também tinha um compromisso de confirmação de chamada. Sou paciente desde então. Meu dentista é muito reconfortante e
+                  muito útil. Excelente tratamento e aconselhamento.”</h5>
                 <h6>Arron Ramsey</h6>
                 <p>Dental Patient</p>
               </div>
@@ -174,7 +174,7 @@
         <!-- Section Heading -->
         <div class="col-12">
           <div class="section-heading text-center">
-            <h2>The Latest News</h2>
+            <h2>Ultimas postagens</h2>
             <div class="line"></div>
           </div>
         </div>
@@ -188,8 +188,9 @@
               <img src="{% static 'website/img/bg-img/4.jpg' %}" alt="">
             </a>
             <!-- Blog Content -->
+            <!-- Blog Content -->
             <div class="blog-content">
-              <a href="{% url 'blog_details' %}" class="post-title">How your mouth bacteria can harm your lungs</a>
+              <a href="{% static 'website/blog-details.html' %}" class="post-title">Como as bactérias da boca podem prejudicar seus pulmões</a>
               <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
               <div class="post-meta">
                 <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
@@ -199,43 +200,43 @@
           </div>
         </div>
 
-        <!-- Single Blog Item -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="single-blog-item mb-100">
-            <a href="{% url 'blog_details' %}">
-              <img src="{% static 'website/img/bg-img/5.jpg' %}" alt="">
-            </a>
-            <!-- Blog Content -->
-            <div class="blog-content">
-              <a href="{% url 'blog_details' %}" class="post-title">What is the best kind of toothpaste to use?</a>
-              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
-              <div class="post-meta">
-                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
-                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
-              </div>
+      <!-- Single Blog Item -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-blog-item mb-100">
+          <a href="{% static 'website/blog-details.html' %}">
+            <img src="{% static 'website/img/bg-img/5.jpg' %}"alt="">
+          </a>
+          <!-- Blog Content -->
+          <div class="blog-content">
+            <a href="{% static 'website/blog-details.html' %}"class="post-title">Qual é o melhor tipo de pasta de dente para usar?</a>
+            <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+            <div class="post-meta">
+              <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+              <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Single Blog Item -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="single-blog-item mb-100">
-            <a href="{% url 'blog_details' %}">
-              <img src="{% static 'website/img/bg-img/6.jpg' %}" alt="">
-            </a>
-            <!-- Blog Content -->
-            <div class="blog-content">
-              <a href="{% url 'blog_details' %}" class="post-title">Why you should avoid sipping your drinks</a>
-              <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
-              <div class="post-meta">
-                <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
-                <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
-              </div>
+      <!-- Single Blog Item -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="single-blog-item mb-100">
+          <a href="{% static 'website/blog-details.html' %}">
+            <img src="{% static 'website/img/bg-img/6.jpg' %}"alt="">
+          </a>
+          <!-- Blog Content -->
+          <div class="blog-content">
+            <a href="{% static 'website/blog-details.html' %}"class="post-title">Por que você deve evitar tomar suas bebidas</a>
+            <p>Donec tempor, lorem et euismod eleifend, est lectus laoreet ante, sed accusan justo diam ...</p>
+            <div class="post-meta">
+              <a href="#"><i class="icon_clock_alt"></i> 28 Sep 2018</a>
+              <a href="#"><i class="icon_chat_alt"></i> 3 Comments</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </section>
   <!-- ***** Blog Area End ***** -->
 {% endblock %}
